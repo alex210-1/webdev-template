@@ -11,3 +11,13 @@ react css:
     tailwind extension:
         follow setup instructions!
         add typescriptreact -> javascript to tailwindcss: include languages if it doesn't work
+
+setup express with typescript:
+    https://blog.logrocket.com/typescript-with-node-js-and-express/
+
+postgres:
+    yarn add @types/pg pg
+
+pgtyped:
+    https://pgtyped.now.sh/docs/getting-started
+    npm install @pgtyped/cli @pgtyped/query
