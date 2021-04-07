@@ -1,4 +1,5 @@
 {
+    "type": "module",
     "dependencies": {
         "@pgtyped/cli": "^0.10.2",
         "@pgtyped/query": "^0.10.2",

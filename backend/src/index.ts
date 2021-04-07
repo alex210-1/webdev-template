@@ -12,12 +12,12 @@ export const app = express();
 // routes
 app.get('/', (req, res) => res.send('Express + TypeScript Server'));
 
-app.get('/name/:id', (req, res) => {
+app.get('/name/:id', async (req, res) => {
     const id = Number(req.params.id);
 
-    const name = getName.run({ id }, pgClient)
+    const names = await getName.run({ id }, pgClient)
 
-    res.json({ name });
+    res.json({ name: names[0] ?? null });
 });
 
 app.listen(config.port, () => {
