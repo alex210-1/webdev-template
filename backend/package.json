@@ -1,5 +1,4 @@
 {
-    "type": "module",
     "dependencies": {
         "@pgtyped/cli": "^0.10.2",
         "@pgtyped/query": "^0.10.2",
@@ -9,7 +8,8 @@
     },
     "main": "src/index.js",
     "scripts": {
-        "start": "nodemon src/index.ts",
+        "start": "ts-node src/index.ts",
+        "watch": "nodemon -e ts src/index.ts",
         "build": "tsc --project ./",
         "gen:pg": "npx pgtyped -w -c pgtconfig.json"
     },
